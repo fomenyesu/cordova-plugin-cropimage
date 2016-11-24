@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+  id="com.fomen.plugins.CropImage"
+  version="1.0.0">
+  <name>CropImage</name>
+
+  <js-module src="www/CropImage.js" name="CropImage">
+    <clobbers target="CropImage" />
+  </js-module>
+
+  <!-- android -->
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CropImage">
+                <param name="ios-package" value="CropImage"/>
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/CropImage.h" />
+        <source-file src="src/ios/CropImage.m" />
+        <header-file src="src/ios/VPImageCropperViewController.h" />
+        <source-file src="src/ios/VPImageCropperViewController.m" />
+
+<!--       Other required frameworks -->
+      <framework src="QuartzCore.framework" />
+
+    </platform>
+</plugin>
