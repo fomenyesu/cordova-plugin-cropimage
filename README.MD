@@ -1,6 +1,4 @@
 # cordova-plugin-cropimage
-# cordova-plugin-cropimage
-
 cordova-plugin-cropimage是调用IOS原生VIEW裁剪图片并压缩图片的插件，解决H5端裁剪图片并压缩时的速度慢的技术瓶颈。
 
 开发工程下执行以下命令导入本插件：
